@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verkefni 1 - VEF2</title>
+    <link rel="stylesheet" href="css/pico.sand.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <nav>
+            <ul>
+                <li>Vefhönnun 2</li>
+            </ul>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+            </ul>
+        </nav>
+
+        <picture>
+            <source media="(min-width:1920px)" srcset="images/mynd_1920.jpg">
+            <source media="(min-width:1280px)" srcset="images/mynd_1280.jpg">
+            <source media="(min-width:768px)" srcset="images/mynd_768.jpg">
+            <img src="images/mynd_1280.jpg" alt="">
+        </picture>
+
+        <h1>Þetta er kynning á pico framework</h1>
+        <h2>Hér kemur grid:</h2>
+
+        <section class="grid">
+            <article>
+                <h3>Dálkur 1</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos saepe laborum eos ab optio voluptatem reprehenderit vitae voluptate eaque, delectus animi accusantium, corporis asperiores sed nam aspernatur impedit quasi architecto?</p>
+            </article>
+
+            <article>
+                <h3>Dálkur 2</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos saepe laborum eos ab optio voluptatem reprehenderit vitae voluptate eaque, delectus animi accusantium, corporis asperiores sed nam aspernatur impedit quasi architecto?</p>
+            </article>
+
+            <article>
+                <h3>Dálkur 3</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos saepe laborum eos ab optio voluptatem reprehenderit vitae voluptate eaque, delectus animi accusantium, corporis asperiores sed nam aspernatur impedit quasi architecto?</p>
+            </article>
+
+            <aside>
+                <h4>Aside</h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam voluptas, ut tempora iure ea officia? Sint facilis saepe nisi asperiores praesentium similique molestias necessitatibus quam soluta consequuntur magni, et ad.</p>
+            </aside>
+        </section>
+
+        <table class="striped">
+            <thead data-theme="dark">
+                <tr>
+                    <td>Planet</td>
+                    <td>Diameter</td>
+                    <td>Distance to Sun</td>
+                    <td>Orbit</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="Planet">Mercury</td>
+                    <td data-label="Diameter">4880</td>
+                    <td data-label="Distance to Sun">0.39</td>
+                    <td data-label="Orbit">88</td>
+                </tr>
+                <tr>
+                    <td data-label="Planet">Venus</td>
+                    <td data-label="Diameter">12104</td>
+                    <td data-label="Distance to Sun">0.72</td>
+                    <td data-label="Orbit">225</td>
+                </tr>
+                <tr>
+                    <td data-label="Planet">Earth</td>
+                    <td data-label="Diameter">12742</td>
+                    <td data-label="Distance to Sun">1.00</td>
+                    <td data-label="Orbit">365</td>
+                </tr>
+                <tr>
+                    <td data-label="Planet">Mars</td>
+                    <td data-label="Diameter">6779</td>
+                    <td data-label="Distance to Sun">1.52</td>
+                    <td data-label="Orbit">687</td>
+                </tr>
+            </tbody>
+            <tfoot data-theme="dark">
+                <tr>
+                    <td>Average</td>
+                    <td data-label="Diameter">9126</td>
+                    <td data-label="Distance to Sun">0.91</td>
+                    <td data-label="Orbit">341</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <h3>Form</h3>
+        <form action="">
+            <label for="nafn">Nafn:</label>
+            <input type="text" id="nafn" required placeholder="Name">
+
+            <label for="netfang">Netfang:</label>
+            <input type="email" id="netfang" required placeholder="Email">
+
+            <label for="skilabod">Skilaboð:</label>
+            <textarea id="skilabod" placeholder="Message"></textarea>
+            
+            <div class="grid">
+                <div>
+                    <label>Valkostur:</label>
+
+                    <label for="radio1">
+                        <input type="radio" id="radio1" name="radiobtn" checked>
+                        Já
+                    </label>
+
+                    <label for="radio2">
+                        <input type="radio" id="radio2" name="radiobtn">
+                        Nei
+                    </label>
+                </div>
+                <div>
+                    <label for="sel">Fleiri valkostir:</label>
+                    <select id="sel">
+                        <option>Val 1</option>
+                        <option>Val 2</option>
+                        <option>Val 3</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Senda">
+
+        </form>
+
+
+    </main>
+</body>
+</html>

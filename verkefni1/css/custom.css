@@ -1,0 +1,75 @@
+:root{
+    --pico-spacing: 1.2rem;
+}
+
+body, h1,h2,h3,h4,h5,h6{
+    font-family: "Asul", serif;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    margin-top: var(--pico-spacing)
+}
+
+input[type=submit]{
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+/* töflu stílar (mobile): */
+/*thead falið en er samt sýnilegt fyrir aria lestur*/
+thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* tr og td breytt í block til að gera töfluna að einum dálki*/
+tr {
+    display: block;
+    border-bottom: 1px solid var(--pico-color);
+}
+
+/* innihald td jafnað hægra megin til að data-label fái pláss */
+td {
+    display: block;
+    text-align: right;
+}
+
+td::before{
+    content: attr(data-label);
+    float: left;
+}
+/* töflu stílar enda(mobile) */
+
+@media (width >= 768px){
+    /*taflan endurgerð*/
+    thead {
+        display: table-header-group;
+        position: relative;
+        width: auto;
+        overflow: visible;
+    }
+    td {
+        display: table-cell;
+        text-align: left;
+    }
+    /* ath! td::before data-label tekið út */
+    td::before {
+        content: none;
+        clear: both;
+    }
+    tr {
+        display: table-row;
+        border-bottom: none;
+    }
+}
